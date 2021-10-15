@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-image: url("./../img/lake-g0d81cf6a2_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+button {
+  width: 120px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: lightskyblue;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main,
+footer,
+section {
+  flex-wrap: wrap;
+}
+
+header > * {
+  margin: 20px;
+}
+
+main {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 200px;
+}
+
+article {
+  margin: 20px;
+}
+
+.first-section {
+  width: 900px;
+  flex-direction: column;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+footer > * {
+  margin: 10px;
+}
+
+header * {
+  color: white;
+}
+
+main,
+footer > * {
+  color: black;
+}
+
+a {
+  color: lightskyblue;
+}
+
+.second-section article {
+  width: 400px;
+}
+
+.second-section img {
+  width: 400px;
+  height: auto;
+}
+
+.third-section article {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.laptop {
+  width: 60%;
+  height: auto;
+  margin-bottom: -140px;
+}
+
+.laptop img {
+  width: 100%;
+  height: auto;
+}
+
+footer img {
+  width: 64px;
+  height: auto;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+a,
+p {
+  font-weight: 400;
+}

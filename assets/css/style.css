@@ -10,15 +10,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
-  width: 100%;
-  height: auto;
-  background-image: url("./../img/lake-g0d81cf6a2_1920.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-
 button {
   width: 120px;
   height: 60px;
@@ -35,12 +26,23 @@ footer {
   justify-content: center;
 }
 
+header {
+  width: 100%;
+  height: auto;
+  background-image: url("./../img/lake-g0d81cf6a2_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  row-gap: 30px;
+}
+
 section {
   width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  column-gap: 20px;
 }
 
 header,
@@ -50,22 +52,15 @@ section {
   flex-wrap: wrap;
 }
 
-header > * {
-  margin: 20px;
-}
-
 main {
   padding-left: 200px;
   padding-right: 200px;
   margin-top: 200px;
-}
-
-article {
-  margin: 20px;
+  row-gap: 50px;
 }
 
 .first-section {
-  width: 900px;
+  width: 60%;
   flex-direction: column;
 }
 
@@ -73,16 +68,16 @@ footer {
   background-color: lightgray;
 }
 
-footer > * {
-  margin: 10px;
+footer {
+  row-gap: 10px;
 }
 
-header * {
+header :is(h1, p, button) {
   color: white;
 }
 
 main,
-footer > * {
+footer {
   color: black;
 }
 
@@ -91,16 +86,18 @@ a {
 }
 
 .second-section article {
-  width: 400px;
+  width: 30%;
+  min-width: 350px;
 }
 
 .second-section img {
-  width: 400px;
+  width: 100%;
   height: auto;
 }
 
 .third-section article {
-  width: 300px;
+  width: 20%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;

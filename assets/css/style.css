@@ -27,7 +27,7 @@ footer {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-image: url("./../img/lake-g0d81cf6a2_1920.jpg");
   background-repeat: no-repeat;
@@ -50,11 +50,10 @@ main,
 footer,
 section {
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 main {
-  padding-left: 200px;
-  padding-right: 200px;
   margin-top: 200px;
   row-gap: 50px;
 }
@@ -62,6 +61,7 @@ main {
 .first-section {
   width: 60%;
   flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -134,4 +134,11 @@ h3 {
 a,
 p {
   font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
 }
